@@ -74,6 +74,9 @@ class Checker
       {
         array_unshift($this->errors,$this->error_msgs[4]);
       }
+    }else
+    {
+      array_unshift($this->errors,"Invalid field type.");
     }
   }
 }
