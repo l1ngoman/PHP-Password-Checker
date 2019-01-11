@@ -15,6 +15,11 @@ error_reporting(E_ALL);
 
 <body>
   <main class="formContainer">
+    <h1>Credential Checker</h1>
+    <h3>Username and password must be longer than 6 characters.</h3>
+    <h3>Username and password cannot be the same.</h3>
+    <h3>Username cannot contain $, @, or #.</h3>
+    <h3>Password must contain $, @, or #.</h3>
     <form>
       
         <?php
@@ -30,9 +35,6 @@ error_reporting(E_ALL);
             echo '<script>window.location.href = "/credential_checker/success.html";</script>';
           }
         ?>
-      <h1>Credential Checker</h1>
-      <h3>Username and password must be longer than 6 characters.</h3>
-      <h3>Username and password cannot be the same.</h3>
       <div class="formGroup">
         <label name="username">
           Username
